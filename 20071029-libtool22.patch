@@ -1,0 +1,15 @@
+--- origsrc/libspiro-20071029/Makefile.in	2007-10-29 19:22:38.000000000 -0500
++++ src/libspiro-20071029/Makefile.in	2009-09-22 14:31:50.913649200 -0500
+@@ -42,10 +42,10 @@ get-spiro-src:
+ 	bash < get-spiro-src.sh
+ 
+ %.lo: %.c
+-	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) -c $<
++	$(LIBTOOL) --mode=compile --tag=CC $(CC) $(CFLAGS) -c $<
+ 
+ libspiro.la: $(LIB_FF_SPIRO_OBJECTS)
+-	$(LIBTOOL) --mode=link $(CC) $(CFLAGS) -no-undefined @LDFLAGS@  -o libspiro.la $(LIB_FF_SPIRO_OBJECTS) $(LIBS) \
++	$(LIBTOOL) --mode=link --tag=CC $(CC) $(CFLAGS) -no-undefined @LDFLAGS@  -o libspiro.la $(LIB_FF_SPIRO_OBJECTS) $(LIBS) \
+ 	    @LIBS@ \
+ 	    -rpath $(libdir) -version-info $(FFSPIRO_VERSION):$(FFSPIRO_REVISION):$(FFSPIRO_AGE)
+ 
