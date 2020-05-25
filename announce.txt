@@ -1,0 +1,22 @@
+From cygwin-announce-libspiro-20200505-1 Tue May 26 12:08:28 2020
+From: Ken Brown <kbrown@cornell.edu>
+To: cygwin-announce@cygwin.com
+Date: Tue, 26 May 2020 12:08:28 -0400
+Message-Id: <20200526120828.33127-1-kbrown@cornell.edu>
+Subject: libspiro 20200505-1
+
+The following packages have been uploaded to the Cygwin distribution:
+
+* libspiro1-20200505-1
+* libspiro-devel-20200505-1
+
+Spiro is the creation of Raph Levien.  It simplifies the drawing of
+beautiful curves.  Using bezier splines an artist can easily draw
+curves with the same slope on either side of an on-curve point.
+Spiros, on the other hand, are based on clothoid splines which make it
+easy to maintain constant curvature as well as constant slope.  Such
+curves will simply look nicer.
+
+This is an update to the latest upstream release.
+
+Ken Brown
